@@ -1,0 +1,28 @@
+
+public class NestedTryEx {
+
+	public static void main(String[] args) {
+		try
+		{
+			System.out.println("going to divide by zero");
+			int num=10/0;
+			try
+			{
+				System.out.println("array index out of bound");
+				int num1[] = new int[10];
+				num1[11] = 89;
+			}
+			catch(ArrayIndexOutOfBoundsException ex1)
+			{
+				System.out.println(ex1);
+			}
+		}
+		catch(ArithmeticException ex)
+		{
+			System.out.println("Error is : " +ex);
+		}
+		System.out.println("rest of code....");
+
+	}
+
+}
