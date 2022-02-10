@@ -1,0 +1,22 @@
+
+public class MultiCatchEx {
+
+	public static void main(String[] args) {
+		System.out.println("multiple catch block example");
+		try {
+			int arr[] = new int[5];
+			arr[6] = 10/0;
+		}
+		catch(ArithmeticException e1)
+		{
+			System.out.println(e1);
+		}
+		catch(ArrayIndexOutOfBoundsException e2)
+		{
+			System.out.println(e2);
+			
+		}
+		System.out.println("rest of the code....");
+	}
+}
+     
